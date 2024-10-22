@@ -11,12 +11,18 @@ describe('Earnings and Wallet Screen Tests', () => {
   
       // Step 2: Verify MXRF11 investment card is displayed on the Earnings screen
       await expect(element(by.text('MXRF11'))).toBeVisible();
+      await expect(element(by.text('VISC11'))).toBeVisible();
+      await expect(element(by.text('RVBI11'))).toBeVisible();
   
       // Step 3: Tap on the Wallet tab
       await element(by.text('Wallet')).tap();
   
       // Step 4: Verify MXRF11 is displayed on the Wallet screen
       await expect(element(by.text('MXRF11'))).toBeVisible();
+      await expect(element(by.text('CPTS11'))).toBeVisible();
+      await expect(element(by.text('MCHY11'))).toBeVisible();
+      await expect(element(by.text('RVBI11'))).toBeVisible();
+      await expect(element(by.text('VISC11'))).toBeVisible();
     });
   });
   
